@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tanvi Kamble</title>
+    <link rel="shortcut icon" href="clipart-face-labrador-6.jpg" type="image/x-icon">
+
+    <!--
+     Font Awesome Icons -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS - Includes Bootstrap -->
+    <link href="css/creative.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" background = autumn.jpg>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <img class="navbar-brand js-scroll-trigger" onclick="location.href='index.html';" onmouseover="cur" alt="img5"
+                src="home.jpeg" width=35vw height=40vw>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="Table/table_index.html">Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-10 align-self-end">
+                        <br>
+                        <br>
+                        <br>
+                        
+                        <h1 style="color:white; font-size:1.5rem" class="text-uppercase text-black font-weight-bold">Memories :') </h1>
+                        <hr class="divider my-4">
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p style="color:white; font-size:1rem" class="text-white-75 font-weight-light mb-5"> Do not forget to click on the pictures and see more! </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <section id="pictures">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <img id="f" class="img-fluid" src="img/pic1.jpeg" alt="" height=350vw onclick="changepic()" onmouseover="cur"         width=350vw>
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="img/p13.jpeg">
+                        <img class="img-fluid" src="img/p13.jpeg" alt="" height=350vw width=350vw>
+
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <img id="change" class="img-fluid" src="img/p11.jpeg" alt="" height=350vw width=350vw onclick="changepic1()"
+                        onmouseover="cur" />
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        var image = document.getElementById("change");
+        function changepic1() {
+            //alert(image.getAttribute('src'));
+            if (image.getAttribute('src') == "img/p11.jpeg") {
+                image.src = "img/p15.jpeg";
+            }
+            else if (image.getAttribute('src') == "img/p15.jpeg") {
+                image.src = "img/p10.jpeg";
+            }
+            else if (image.getAttribute('src') == "img/p10.jpeg") {
+                image.src = "img/p14.jpeg";
+
+            }
+            else if (image.getAttribute('src') == "img/p11.jpeg") {
+                image.src = "img/p12.jpeg";
+
+            }
+            else {
+                image.src = "img/p11.jpeg";
+            }
+        }
+    </script>
+
+    <script>
+        var imag = document.getElementById("f");
+        function changepic() {
+            //alert(imag.getAttribute('src'));
+            if (imag.getAttribute('src') == "img/pic1.jpeg") {
+                //alert("yes");
+                imag.src = "img/pic25.jpeg";
+            }
+            else if (imag.getAttribute('src') == "img/pic25.jpeg") {
+            imag.src = "img/p5.jpeg";
+            }
+            else if (imag.getAttribute('src') == "img/p5.jpeg") {
+            imag.src = "img/p6.jpeg";
+            }
+            else if (imag.getAttribute('src') == "img/p6.jpeg") {
+            imag.src = "img/p9.jpeg";
+
+            }
+            else if (imag.getAttribute('src') == "img/p9.jpeg") {
+            imag.src = "img/pic1.jpeg";
+            }
+        }
+    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
